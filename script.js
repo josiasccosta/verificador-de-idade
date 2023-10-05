@@ -1,21 +1,21 @@
 
 function clicou(){
-    var data = new Date() // pega o ano atual
-    var anoAtual = data.getFullYear()
-    var idadetxt = document.getElementById('inascimento') // pega o input do ano que nasceu
-    var res = document.getElementById('res')
+    let data = new Date() // pega o ano atual
+    let anoAtual = data.getFullYear()
+    let idadetxt = document.getElementById('inascimento') // pega o input do ano que nasceu
+    let res = document.getElementById('res')
    
     if (idadetxt.value.length == 0 || Number(idadetxt.value) > anoAtual){
         alert('Verifique se os dados estão corretos')
     }else{
-         var nascido = Number(idadetxt.value)
-         var idade = anoAtual - nascido //calculo do ano atual - nascimento
+         let nascido = Number(idadetxt.value)
+         let idade = anoAtual - nascido //calculo do ano atual - nascimento
 
-         var sexo = document.getElementsByName('sexo')
-         var img = document.createElement('img')
+         let sexo = document.getElementsByName('sexo')
+         let img = document.createElement('img')
          img.setAttribute('id' , 'foto')
 
-         var genero = ''
+         let genero = ''
          if (sexo[0].checked){
             genero = 'um Homem'
             if(idade >= 0 && idade < 10){
