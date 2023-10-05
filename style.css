@@ -9,6 +9,7 @@ body{
     background-image: linear-gradient(to bottom, rgb(129, 33, 207), transparent);
     background-attachment: fixed;
     font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
 }
 
 header{
@@ -27,9 +28,7 @@ header{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.349);
 }
 
-#conteudo{
-    font-size: 1.25rem;
-}
+
 
 #inascimento{
     width: 100px;
