@@ -5,7 +5,7 @@ function clicou(){
     let idadetxt = document.getElementById('inascimento') // pega o input do ano que nasceu
     let res = document.getElementById('res')
    
-    if (idadetxt.value.length == 0 || Number(idadetxt.value) > anoAtual){
+    if (idadetxt.value.length == 0 || Number(idadetxt.value) > anoAtual || Number(idadetxt.value) <= 0){
         alert('Verifique se os dados estão corretos')
     }else{
          let nascido = Number(idadetxt.value)
